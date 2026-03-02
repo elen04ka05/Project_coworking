@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  {% load static %}
+
+    <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="{% static 'css/sign_in.css' %}">
+
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+  <div class="white-rectangle">
+    <div class="welcome-text">
+            <h2>Ну допустим тут каким-то хуем будет лого</h2>
+        </div>
+  </div>
+  <div class="container">
+    <h2 class="form-title"></h2>
+        <div class="info-text">
+            <h3>SIGN IN</h3>
+        </div>
+
+        <!-- Форма -->
+        <form>
+            <div class="form-spacer" style="height: 20px;"></div>
+            <!-- Поле для email -->
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" placeholder="example@mail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Password</label>
+                <input type="tel" id="phone" placeholder="Введите пароль">
+            </div>
+
+            <!-- Две кнопки -->
+            <div class="buttons-container">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+                <button type="reset" class="btn btn-secondary">Sign up</button>
+            </div>
+        </form>
+  </div>
+
+</body>
+</html>
+<body>
+
+</body>
+</html>

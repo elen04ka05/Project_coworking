@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: #047790;  /* Ваш цвет фона */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 10px 10px;  /* Отступы, чтобы белый прямоугольник не прилипал к краям */
+}
+
+.container {
+  background: white;
+  width: 43%;
+  height: 514px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+.white-rectangle {
+  background: white;
+  width: 90%;
+  height: 90px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.welcome-text {
+  color: black;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+/* Заголовок формы */
+.form-title {
+  color: #047790;
+  font-size: 28px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Группа полей формы */
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #047790;
+  box-shadow: 0 0 0 3px rgba(4, 119, 144, 0.1);
+}
+
+.form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Контейнер для кнопок */
+.buttons-container {
+  display: flex;
+  gap: 50px;
+  margin-top: 110px;
+  justify-content: center;
+}
+
+/* Стили для кнопок */
+.btn {
+  /*flex: 1;*/  /* Кнопки одинаковой ширины */
+  width: 40%;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+
+/* Основная кнопка (Submit) */
+.btn-primary {
+  background: #06657A;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #06657A;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(4, 119, 144, 0.3);
+}
+
+/* Вторичная кнопка (Cancel/Reset) */
+.btn-secondary {
+  background: #06657A;
+  color: white;
+  border: 1px solid #ddd;
+}
+
+.btn-secondary:hover {
+  background: #06657A;
+  transform: translateY(-2px);
+}
+
+
+/* Текстовая информация */
+.info-text {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #666;
+  line-height: 1.6;
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+.info-text h3 {
+  color: black;
+  margin-bottom: 5px;
+  font-size: 22px;
+}
