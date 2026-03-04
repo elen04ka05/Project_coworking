@@ -7,15 +7,15 @@
   {% load static %}
 
     <!-- Подключаем CSS -->
-    <link rel="stylesheet" href="{% static 'css/sign_up.css' %}">
+    <link rel="stylesheet" href="{% static 'css/sign_up.css' %}?v={% now 'U' %}">
 
     {% block extra_css %}{% endblock %}
 </head>
 <body>
   <div class="white-rectangle">
-    <div class="welcome-text">
-            <h2>Ну допустим тут каким-то хуем будет лого</h2>
-        </div>
+    <div class="left-image">
+                <img src="{% static 'images/logo.jpg' %}" alt="Логотип">
+            </div>
   </div>
   <div class="container">
     <h2 class="form-title"></h2>
