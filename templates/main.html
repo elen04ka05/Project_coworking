@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    {% load static %}  <!-- Загружаем теги static -->
+    <!--<link rel="stylesheet" href="{% static 'css/main.css' %}">-->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}?v={% now 'U' %}">
+
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <div class="white-rectangle">
+         <!-- Горизонтальный контейнер -->
+        <div class="horizontal-container">
+            <!-- Картинка слева -->
+            <div class="left-image">
+                <img src="{% static 'images/logo.jpg' %}" alt="Логотип">
+            </div>
+
+            <!-- Контейнер с кнопками -->
+            <div class="buttons-group">
+                <!-- Обычная кнопка -->
+                <button class="nav-btn">Наши коворкинги</button>
+
+                <!-- Обычная кнопка -->
+                <button class="nav-btn">Забронировать помещение</button>
+
+                <!-- Обычная кнопка -->
+                <button class="nav-btn">О нас</button>
+
+                <!-- Кнопка-картинка -->
+                <button class="image-btn">
+                    <img src="{% static 'images/profile.jpg' %}" alt="Иконка">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="image-container">
+        <!-- Путь к картинке в static -->
+        <img src="{% static 'images/main_1.jpg' %}" alt="Моя картинка" class="content-image">
+        <button class="image-button">Забронировать</button>
+
+    </div>
+</body>
+</html>
