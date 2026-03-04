@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    {% load static %}  <!-- Загружаем теги static -->
+    <link rel="stylesheet" href="{% static 'css/user_profile.css' %}?v={% now 'U' %}">
+
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <div class="white-rectangle">
+         <!-- Горизонтальный контейнер -->
+        <div class="horizontal-container">
+            <!-- Картинка слева -->
+            <button class="image-btn-logo">
+                    <img src="{% static 'images/logo.jpg' %}" alt="Иконка">
+                </button>
+
+            <!-- Контейнер с кнопками -->
+            <div class="buttons-group">
+                <!-- Обычная кнопка -->
+                <button class="nav-btn">Наши коворкинги</button>
+
+                <!-- Обычная кнопка -->
+                <button class="nav-btn">Забронировать помещение</button>
+
+                <!-- Обычная кнопка -->
+                <button class="nav-btn">О нас</button>
+
+                <!-- Кнопка-картинка -->
+                <button class="image-btn">
+                    <img src="{% static 'images/profile.jpg' %}" alt="Иконка">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Два новых прямоугольника -->
+    <div class="two-columns-container">
+        <!-- Левый прямоугольник (с кнопками) -->
+        <div class="left-rectangle">
+            <div class="horizontal-container">
+                <div class="left-image">
+                    <img src="{% static 'images/man.jpg' %}" alt="Логотип">
+                </div>
+                <div class="welcome-text">
+                    <h2>Игорь Набатов</h2>
+                    <h3>napoleon@gmail.com</h3>
+                </div>
+            </div>
+            <div>
+                <h3 class="section-title"></h3>
+                <div class="action-buttons">
+                    <button class="action-btn">Мой профиль</button>
+                    <button class="action-btn">Мои бронирования</button>
+                    <button class="action-btn">Избранные места</button>
+                    <button class="action-btn">Выйти</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Правый прямоугольник (с кнопками и формой) -->
+        <div class="right-rectangle">
+            <div class="horizontal-container">
+                <div class="left-image">
+                    <img src="{% static 'images/man.jpg' %}" alt="Логотип">
+                </div>
+                <div class="welcome-text">
+                    <h2>Игорь Набатов</h2>
+                    <h3>napoleon@gmail.com</h3>
+                </div>
+            </div>
+            <div>
+                <h3 class="section-title"></h3>
+                <!-- Форма -->
+            <form>
+            <!-- Поле для имени -->
+            <div class="form-group">
+                <label for="name">Ваше имя *</label>
+                <input type="text" id="name" placeholder="Введите ваше имя" required>
+            </div>
+
+            <!-- Поле для email -->
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" placeholder="example@mail.com" required>
+            </div>
+
+            <!-- Поле для телефона -->
+            <div class="form-group">
+                <label for="phone">Mobile number</label>
+                <input type="tel" id="phone" placeholder="Введите номер телефона">
+            </div>
+
+            <!-- Две кнопки -->
+            <div class="buttons-container">
+                <button type="submit" class="btn btn-primary">Save change</button>
+            </div>
+        </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
