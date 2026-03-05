@@ -24,5 +24,6 @@ urlpatterns = [
     path('sign_up', users_views.sign_up),
     path('sign_in', users_views.sign_in),
     path('main', main_views.main),
-    path('user_profile', users_views.user_profile)
+    path('user_profile', users_views.user_profile),
+    path('user_bron', users_views.user_bron),
 ]
