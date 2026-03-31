@@ -178,3 +178,32 @@ body {
   margin-bottom: 5px;
   font-size: 22px;
 }
+
+
+.messages {
+  margin-bottom: 20px;
+}
+
+.alert {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.alert-error {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+}
+
+.field-error {
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Если поле с ошибкой */
+.form-group input.is-invalid {
+  border-color: #dc3545;
+}
